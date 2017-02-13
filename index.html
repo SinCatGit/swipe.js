@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Swipe Test</title>
+		<link rel="stylesheet" type="text/css" href="swipe.css">
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="hammer.js"></script>
+        <link rel="stylesheet" href="animate.css">
+        <script src="swipe.js"></script>
+	</head>
+	<body>
+    <div id="swipeContainer">
+        <div class="swipe-page animated" style="background-color: red;">First</div>
+        <div class="swipe-page animated" style="background-color: blue;">Second</div>
+        <div class="swipe-page animated" style="background-color: green;">Third</div>
+        <div class="swipe-page animated" style="background-color: purple;">Forth</div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            Swipe.init();
+        });
+    </script>
+	</body>
+</html>
